@@ -1,13 +1,79 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  color: white;
+}
+
+.App {
+  width: 500px;
+  margin: auto;
+}
+
+.todoInput {
+  background-color: black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.todoInput input {
+  width: 70%;
+  padding: 0.5rem;
+}
+
+.todoInput svg {
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+li {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+li h3 {
+  margin-top: 0rem;
+  text-align: start;
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+}
+
+li div svg {
+  cursor: pointer;
+}
+
+.listOutput {
+  background-color: black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
 }
