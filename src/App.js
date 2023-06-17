@@ -12,7 +12,6 @@ function App() {
   }
 
   function handleDelete(itemIndex) {
-    console.log(`Deleted item at ${itemIndex}`);
     let filteredData = data.filter((item, index) => {
       return index !== itemIndex;
     });
@@ -36,7 +35,7 @@ function App() {
         </div>{" "}
         <div className="listOutput">
           {" "}
-          {data.length > 1 ? (
+          {data.length ? (
             <ul>
               {" "}
               {data.map((item, index) => {
